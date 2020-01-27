@@ -10,9 +10,7 @@ train_distance = 100;
 bomb_mass = 1;
  
 def f_to_c(f_temp):
-
  c_temp = (f_temp - 32) * 5/9;
- 
  return c_temp;
  
 f100_in_celsius = f_to_c(100)
@@ -38,7 +36,9 @@ def get_energy(mass, c):
   return mass*c**2
  
 bomb_energy = get_energy(bomb_mass, c)
+
 #print(bomb_energy)
+
 print("A 1kg bomb supplies " +str(bomb_energy) + " Joules.")
  
 def get_work(mass, acceleration, distance):
